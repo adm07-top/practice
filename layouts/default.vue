@@ -41,7 +41,7 @@
     </div>
   </header>
 
-  <main class = "p-6 flex flex-row bg-slate-100 h-screen bg-[url(/public/images/audietron.png)] bg-bottom bg-cover w-full">
+  <main class = "p-6 flex flex-row bg-slate-100 h-screen bg-[url(/public/images/audietron.png)] max-md:w-48 bg-bottom bg-cover w-full">
     <slot />
   </main>
 
