@@ -1,7 +1,7 @@
 <template>
   <header class = "flex flex-row w-full relative bg-slate-400 border-b-2 border-slate-300 max-sm:justify-between max-sm:relative">
     <div class = "basis-1/4 items-center justify-start px-8 min-w-40 max-sm:basis-auto">
-      <img src="/images/logo10.png" class = "w-16 h-16 bg-transparent">
+      <img src="/images/newlogo1.png" class = "w-16 h-16 bg-transparent">
     </div>
 
     <div class = "basis-1/4 max-sm:basis-auto"></div>
@@ -15,17 +15,17 @@
       <div class="my-auto p-2 hover:bg-gray-500 text-black max-sm:w-full max-sm:text-center rounded-md max-sm:px-0 max-sm:pb-0" @click = "switch_submenu">
         Info
         <div class="flex flex-col border-2 border-gray-500 rounded-lg absolute top-full bg-white text-black w-56 text-center max-sm:relative max-sm:w-full max-sm:bg-gray-400" v-show = 'submenu'>
-          <NuxtLink to = "/Page1" class = "my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-black max-sm:w-full max-sm:border-t-2 max-sm:text-center">Описание</NuxtLink>
-          <NuxtLink to = "/Page2" class = "my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-black max-sm:w-full max-sm:text-center">История</NuxtLink>
+          <NuxtLink to = "/Page1" class = "my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-black max-sm:w-full max-sm:border-t-2 max-sm:text-center">Memes</NuxtLink>
+          <NuxtLink to = "/Page2" class = "my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-black max-sm:w-full max-sm:text-center">Catalog</NuxtLink>
           <NuxtLink to = "/Page3" class = "my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-black max-sm:w-full max-sm:text-center">Зарядная система</NuxtLink>
           <NuxtLink to = "/Page4" class = "my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-black max-sm:w-full max-sm:border-black max-sm:text-center">Технические характеристики</NuxtLink>
         </div> 
       </div>   
 
       <NuxtLink to = "/LogIn" :class = "{'my-auto p-2 hover:bg-gray-500 max-sm:w-full max-sm:border-b-2 max-sm:border-black max-sm:text-center': submenu,
-        'my-auto p-2 hover:bg-gray-500 text-black max-sm:w-full max-sm:border-b-2 max-sm:border-t-2 rounded-md max-sm:border-black max-sm:text-center': !submenu}">About</NuxtLink>
+        'my-auto p-2 hover:bg-gray-500 text-black max-sm:w-full max-sm:border-b-2 max-sm:border-t-2 rounded-md max-sm:border-black max-sm:text-center': !submenu}">LogIn</NuxtLink>
 
-      <NuxtLink to = "/LogOut" class = "my-auto p-2 hover:bg-gray-500 text-black max-sm:w-full max-sm:border-b-2 rounded-md max-sm:border-black max-sm:text-center">Test drive</NuxtLink>
+      <NuxtLink to = "/LogOut" class = "my-auto p-2 hover:bg-gray-500 text-black max-sm:w-full max-sm:border-b-2 rounded-md max-sm:border-black max-sm:text-center">LogOut</NuxtLink>
     </nav>
 
     <div v-if = "!burger" @click = "switch_burger" class = "max-sm:flex max-sm:flex-col max-sm:my-auto max-sm:mr-6 max-sm:justify-between max-sm:items-center max-sm:w-8 max-sm:h-6">
@@ -41,7 +41,7 @@
     </div>
   </header>
 
-  <main class = "p-6 flex flex-row bg-slate-100 h-screen bg-[url(/public/images/audietron.png)] max-md:w-48 bg-bottom bg-cover w-full">
+  <main class = "p-6 flex flex-row bg-slate-100 min-h-screen bg-[url(/public/images/audietron.png)] bg-no-repeat max-md:w-24 bg-bottom bg-cover w-full">
     <slot />
   </main>
 
